@@ -1,0 +1,116 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #00bcd4, #4caf50); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Fields Styling */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #4caf50; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-3px); /* Slightly lift button on hover */
+}
+
+/* Action and Link Styling */
+.actions {
+    margin-top: 20px;
+}
+
+a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
